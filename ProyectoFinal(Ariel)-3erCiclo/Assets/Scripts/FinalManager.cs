@@ -24,12 +24,6 @@ public class FinalManager : MonoBehaviour
     {
         Options = AudioManager.Instance.OptionsCanvas;
         EndsTree = new MyOwnTree<Image>();
-        if (Root == null)
-        {
-            Debug.LogError("Root no está asignado.");
-            return;
-        }
-
         EndsTree.AddNode(Root, Root);
         EndsTree.AddNode(Final1, Root);
         EndsTree.AddNode(Final2, Root);
@@ -43,7 +37,6 @@ public class FinalManager : MonoBehaviour
         }
         DisplayGameTimes();
     }
-
     public Image GetFinalBasedOnGauge(float gaugeValue)
     {
         Image final = Root;
