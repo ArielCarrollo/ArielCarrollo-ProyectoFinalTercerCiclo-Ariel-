@@ -5906,7 +5906,7 @@ GameObject:
   - component: {fileID: 1656582696}
   - component: {fileID: 1656582697}
   m_Layer: 5
-  m_Name: AudioSettings
+  m_Name: MusicSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
